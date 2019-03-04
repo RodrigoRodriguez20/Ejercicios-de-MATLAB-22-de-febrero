@@ -40,7 +40,7 @@ function y1=Funcp4(x,y)
 y1=exp(x)/(2*y); 
 end
 y0=1 % establecemos la condicion inicialde la ecuacion diferencial
-[x,y]=ode45(@Funcp4,[0 10],y0); %se determina la rutina de solucion de matlab
+[x,y]=ode45(@Funcp4,[0 1],y0); %se determina la rutina de solucion de matlab
 plot(t,y) %se grafica la funcion
 xlabel('x')
 ylabel('y')
